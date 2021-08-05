@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.card {
+
+  max-width: 920px;
+  display: flex;
+}
+
+.card .vehicle {
+  /* width: 33.3%; */
+  width: calc(100% / 3);
+  height: 500px;
+  padding: 50px;
+}
+
+.sedan {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.suvs {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+}
+
+.vehicle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.vehicle img {
+  width: 64px;
+  height: 40px;
+}
+
+.vehicle h1 {
+  font-family: 'Big Shoulders Display', cursive;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 95%);
+}
+
+.vehicle p {
+  font-family: 'Lexend Deca', sans-serif;
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 32px;
+}
+
+.vehicle button {
+  width: 146px;
+  height: 50px;
+  border: none; 
+  border-radius: 25px;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+.vehicle button:hover {
+  color: hsla(0, 0%, 100%, 0.75);
+  background-color: transparent;
+  border: 3px solid hsla(0, 0%, 100%, 0.75);
+}
+
+
+@media (max-width: 720px) {
+  .card {
+    flex-direction: column;
+    width: 327px;
+  }
+
+  .card .vehicle {
+    width: 100%;
+  }
+}
